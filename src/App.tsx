@@ -21,7 +21,7 @@ function App() {
       </div>
       <div className="flex justify-center py-4">
         <p className="text-sm text-neutral-500">
-          © {new Date().getFullYear()} Vryon and Eyey
+          © {new Date().getFullYear()} Vryon
         </p>
       </div>
     </div>

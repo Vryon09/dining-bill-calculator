@@ -19,7 +19,7 @@ function Form({
   const [final, setFinal] = useState(0);
 
   function handleDiscount() {
-    if (pax === 0) return alert("Please include number of pax.");
+    if (pax === 0) return alert("Please include number of pax. -eyey");
 
     const divide = grossAmount / pax;
     const vat = divide / vatPer;

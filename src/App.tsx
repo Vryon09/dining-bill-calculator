@@ -19,6 +19,11 @@ function App() {
         />
         <Form formName="Without Vat" vatPer={1} scPer={0.05} color="#f5f5f5" />
       </div>
+      <div className="flex justify-center py-4">
+        <p className="text-sm text-neutral-500">
+          © {new Date().getFullYear()} Vryon and Eyey
+        </p>
+      </div>
     </div>
   );
 }

@@ -8,15 +8,15 @@ function App() {
           formName="Vat and SC"
           vatPer={1.12}
           scPer={0.05}
-          color="#FFFBE9"
+          color="#f5f5f5"
         />
-        <Form formName="Vat" vatPer={1.12} scPer={0} color="#FFFBE9" />
-        <Form formName="Without Vat" vatPer={1} scPer={0.05} color="#FFFBE9" />
+        <Form formName="Vat" vatPer={1.12} scPer={0} color="#f5f5f5" />
+        <Form formName="Without Vat" vatPer={1} scPer={0.05} color="#f5f5f5" />
         <Form
           formName="Without Vat and SC"
           vatPer={1}
           scPer={0}
-          color="#FFFBE9"
+          color="#f5f5f5"
         />
       </div>
     </div>

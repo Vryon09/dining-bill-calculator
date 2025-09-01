@@ -19,6 +19,8 @@ function Form({
   const [final, setFinal] = useState(0);
 
   function handleDiscount() {
+    if (pax === 0) return alert("Enter pax!");
+
     const divide = grossAmount / pax;
     const vat = divide / vatPer;
     const twentyP = vat - vat * 0.2;

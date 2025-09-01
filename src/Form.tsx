@@ -54,7 +54,7 @@ function Form({
             type="text"
             value={grossAmount}
             onChange={(e) => {
-              if (isNaN(+e.target.value)) return alert("Numbers only, please.");
+              if (isNaN(+e.target.value)) return;
               setGrossAmount(+e.target.value);
             }}
           />
@@ -67,7 +67,7 @@ function Form({
             type="text"
             value={pax}
             onChange={(e) => {
-              if (isNaN(+e.target.value)) return alert("Numbers only, please.");
+              if (isNaN(+e.target.value)) return;
 
               setPax(+e.target.value);
             }}
@@ -81,7 +81,7 @@ function Form({
             type="text"
             value={discountNum}
             onChange={(e) => {
-              if (isNaN(+e.target.value)) return alert("Numbers only, please.");
+              if (isNaN(+e.target.value)) return;
 
               setDiscountNum(+e.target.value);
             }}

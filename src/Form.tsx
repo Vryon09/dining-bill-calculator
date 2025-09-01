@@ -53,7 +53,10 @@ function Form({
             className="w-40 rounded-xl border-1 px-2 outline-0"
             type="text"
             value={grossAmount}
-            onChange={(e) => setGrossAmount(+e.target.value)}
+            onChange={(e) => {
+              if (isNaN(+e.target.value)) return alert("Numbers only, please.");
+              setGrossAmount(+e.target.value);
+            }}
           />
         </div>
 
@@ -63,7 +66,11 @@ function Form({
             className="w-40 rounded-xl border-1 px-2 outline-0"
             type="text"
             value={pax}
-            onChange={(e) => setPax(+e.target.value)}
+            onChange={(e) => {
+              if (isNaN(+e.target.value)) return alert("Numbers only, please.");
+
+              setPax(+e.target.value);
+            }}
           />
         </div>
 
@@ -73,7 +80,11 @@ function Form({
             className="w-40 rounded-xl border-1 px-2 outline-0"
             type="text"
             value={discountNum}
-            onChange={(e) => setDiscountNum(+e.target.value)}
+            onChange={(e) => {
+              if (isNaN(+e.target.value)) return alert("Numbers only, please.");
+
+              setDiscountNum(+e.target.value);
+            }}
           />
         </div>
       </div>

@@ -48,9 +48,9 @@ function Form({
 
       <div className="mb-4 flex flex-col gap-2 rounded-2xl">
         <div className="flex items-center">
-          <label className="w-36">Gross Amount: </label>
+          <label className="flex-1">Gross Amount: </label>
           <input
-            className="flex-1 rounded-xl border-1 px-2 outline-0"
+            className="w-40 rounded-xl border-1 px-2 outline-0"
             type="text"
             value={grossAmount}
             onChange={(e) => setGrossAmount(+e.target.value)}
@@ -58,9 +58,9 @@ function Form({
         </div>
 
         <div className="flex items-center">
-          <label className="w-36">Pax: </label>
+          <label className="flex-1">Pax: </label>
           <input
-            className="flex-1 rounded-xl border-1 px-2 outline-0"
+            className="w-40 rounded-xl border-1 px-2 outline-0"
             type="text"
             value={pax}
             onChange={(e) => setPax(+e.target.value)}
@@ -68,9 +68,9 @@ function Form({
         </div>
 
         <div className="flex items-center">
-          <label className="w-36">Discout Num: </label>
+          <label className="flex-1">Discount Num: </label>
           <input
-            className="flex-1 rounded-xl border-1 px-2 outline-0"
+            className="w-40 rounded-xl border-1 px-2 outline-0"
             type="text"
             value={discountNum}
             onChange={(e) => setDiscountNum(+e.target.value)}
